@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Tejashree</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff0f3; 
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .card {
+            max-width: 500px;
+            width: 100%;
+            background-color: #fffdfa;
+            padding: 50px 30px;
+            position: relative;
+            box-shadow: 0 15px 45px rgba(255, 182, 193, 0.4);
+            border: 12px solid #ffccd5;
+            text-align: center;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* Watercolor effect top-left */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            left: -60px;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(255, 182, 193, 0.5) 0%, rgba(255,255,255,0) 70%);
+            z-index: 1;
+        }
+
+        /* Watercolor effect bottom-right */
+        .card::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            right: -80px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 175, 189, 0.4) 0%, rgba(255,255,255,0) 70%);
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            color: #d81b60;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+            font-size: 26px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #5d4037;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #d81b60;
+            font-weight: 600;
+        }
+
+        .signature {
+            font-family: 'Great Vibes', cursive;
+            font-size: 42px;
+            color: #d81b60;
+            margin-top: 20px;
+            display: block;
+        }
+
+        /* Video Section Styling */
+        .video-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ffccd5;
+        }
+
+        .video-msg {
+            font-size: 15px;
+            color: #8d6e63;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .video-btn {
+            background-color: #d81b60;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
+        }
+
+        .video-btn:hover {
+            background-color: #ad1457;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(216, 27, 96, 0.5);
+        }
+
+        /* Heart Animation */
+        .heart {
+            position: absolute;
+            color: #ff4d6d;
+            animation: float 4s ease-in-out infinite;
+            z-index: 3;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(10deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="heart" style="top: 20px; left: 40px; font-size: 30px;">❤</div>
+        <div class="heart" style="top: 70px; left: 20px; font-size: 15px; animation-delay: 1s;">❤</div>
+        <div class="heart" style="bottom: 40px; right: 30px; font-size: 25px; animation-delay: 2s;">❤</div>
+
+        <div class="content">
+            <h1>DEAREST TEJASHREE,</h1>
+            
+            <p>
+                I know the new city feels quiet and unfamiliar right now, and the silence might feel a bit heavy. But I wanted to remind you that <strong>home isn't just a place—it's the people who carry you in their hearts.</strong>
+            </p>
+
+            <p>
+                Even though we are miles apart, you aren't alone. I’m right here, just a phone call away, cheering for you as you build this new chapter. You are the strongest person I know, and soon, this new place will feel like it’s been waiting for you all along.
+            </p>
+
+            <p>
+                Until then, wrap yourself in these words and know that <span class="highlight">you are loved, missed, and never truly far from home.</span>
+            </p>
+
+            <span class="signature">Your Best Friend</span>
+
+            <div class="video-section">
+                <p class="video-msg">This looks totally like us... <br> <b>the fox is you and the rabbit is me!</b> 🦊🐰</p>
+                <a href="file:///D:/3rd%20sem%20papers/dbms/videoplayback.mp4" class="video-btn" target="_blank">
+                    Watch Our Video ✨
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

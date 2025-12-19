@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics 6</title>
+</head>
+<body>
+    
+    <div class="box">
+        
+    <style>
+        body{
+            background-color: rgb(119, 5, 75);
+        }
+
+        .box {
+            width: 300px;
+            height: 350px;
+            
+            padding: 20px;
+            border: 5px solid rgb(244, 244, 247);
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 150px;
+            margin-left: 650px;
+            margin-right: 450px;
+            background-color: rgb(243, 242, 241);
+        }  
+
+    .login h1 {
+        text-align: left;
+        color: rgb(5, 5, 5);
+        font-family:'Times New Roman', Times, serif;
+        font-size: 30px;
+        margin-top: -50px;
+    }
+
+    .username input {
+        width: 90%;
+        padding: 10px;
+        margin-top: 12px;
+        font-size: 16px;
+        background-color: rgb(243, 242, 241);
+        outline:none;
+        border: none;
+    }
+
+    .password input {
+        width: 90%;
+        padding: 10px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        background-color: rgb(243, 242, 241);
+        border: #ccc;
+        text-underline-position: under;
+    }
+     
+    .continue input {
+        width: 95%;
+        padding: 10px;
+        margin-top: 30px;
+        border: none;
+        font-size: 18px;
+        background-color: rgb(119, 5, 75);
+        color: white;
+        cursor: pointer;
+    } 
+ 
+    .underlinelogin {
+        width: 10%;
+        height: 1.5px;
+        margin-top: -26px;
+        border: 1px solid black;
+        background-color: rgb(119, 5, 75);
+    }
+    .underline {
+        width: 90%;
+        height: 1.5px;
+        background-color: rgb(119, 5, 75);
+        margin-top: -10px;
+    }
+
+    .continue input:hover {
+        background-color: rgb(90, 3, 57);
+    }
+
+    .social-icons {
+    display: flex;
+    gap: 10px; /* spacing between icons */
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+    /* Common styles for all social icons */
+.social-icons a img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin: auto;
+    padding: auto;
+    size: 10px;
+}
+
+/* Hover effect for all icons */
+.social-icons a img:hover {
+    transform: scale(1.2); /* icon grows slightly on hover */
+}
+
+/* Specific sizes for each social media */
+.social-icons .linkedin img {
+    width: 40x;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+}
+
+.social-icons .instagram img {
+    width: 40px;
+    height: 40px;
+    padding: auto;
+    margin-left: 0px;
+    margin: auto;
+    padding: 10px;
+}
+
+.social-icons .github img {
+    width: 44px;
+    height: 44px;
+    margin: auto;
+    padding: 10px;
+}
+
+</style>
+        <div class="Login">
+            <h1>Login</h1>
+             <div class="underlinelogin">
+         </div>
+        </div>
+        <div class="username">
+            <input type="text" id="username" name="username" placeholder="Enter your username"><br><br>
+             <div class="underline">
+       </div>
+        </div>
+        <div class="password">
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+             <div class="underline">
+       </div>
+        </div>
+          
+       <div class="continue">
+           <input type="submit" value="Continue" action="click">
+       </div>
+       
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/hetshree-vyas-48332632b/" target="_blank" rel="noopener noreferrer" class="linkedin">
+                <img src=https://cdn.icon-icons.com/icons2/2699/PNG/512/linkedin_logo_icon_170234.png alt="LinkedIn logo">
+            </a>
+            <a href="https://www.instagram.com/shr_ee7406/" target="_blank" rel="noopener noreferrer" class="instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram logo">
+            </a>
+            <a href="https://github.com/Hetshreevyas-07" target="_blank" rel="noopener noreferrer" class="github">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">
+            </a>
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>
